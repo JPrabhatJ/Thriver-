@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Navbar Container */
+.navbar {
+  background-color: #000000;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 0rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 2.5rem;
+  left: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* Navbar Sections - Flex-based 3-column layout */
+.logo,
+.navbar-text,
+.nav-buttons {
+  flex: 1;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar-logo {
+  height: 100px;
+  width: auto;
+}
+
+/* Middle Text - Centered */
+.navbar-text {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.navbar-text p {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+/* Right-side Navigation Buttons */
+.nav-buttons {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 1rem;
+  overflow-x: hidden;
+  color: aqua;
+}
+
+/* Navigation Links */
+.nav-buttons a {
+  color: aqua;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.nav-buttons a:hover {
+  color: #00aaff;
+}
+
+/* SALE Banner */
+.sale-banner {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #d400ff;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 999;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.scroll-text {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: scroll-left 35s linear infinite;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0s;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .nav-buttons {
+    gap: 1rem;
+    justify-content: center;
+  }
+  .nav-buttons a {
+    font-size: 1rem;
+  }
+}
+
