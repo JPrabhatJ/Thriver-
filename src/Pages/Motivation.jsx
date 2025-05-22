@@ -5,10 +5,9 @@ const Exam = () => {
   return (
     <div className="six-boxes">
       
-      {/* Card 1 */}
       <div className="box">
         <img
-          src='public/rbi new.png'  
+          src='/rbi new.png'  
           alt="RBI Logo"
           className="exam-image"
         />
@@ -18,10 +17,9 @@ const Exam = () => {
         <p>Regulating: All Banks, Insurance, other financial bodies</p>
       </div>
 
-      {/* Card 2 */}
       <div className="box">
         <img
-          src='public/sebi new.png'
+          src='/sebi new.png'
           alt="SEBI Logo"
           className="exam-image"
         />
@@ -31,10 +29,9 @@ const Exam = () => {
         <p>Regulating: Financial Markets, Stock Exchanges, Share Trading</p>
       </div>
 
-      {/* Card 3 */}
       <div className="box">
         <img
-          src='public/nabard-old-removebg-preview.png'
+          src='/nabard-old-removebg-preview.png'
           alt="NABARD Logo"
           className="exam-image"
         />
@@ -44,10 +41,9 @@ const Exam = () => {
         <p>Lead efforts to grow rural India with financial empowerment.</p>
       </div>
 
-      {/* Card 4 */}
       <div className="box">
         <img
-          src='public/irdai new.png'
+          src='/irdai new.png'
           alt="IRDAI Logo"
           className="exam-image"
         />
@@ -57,10 +53,10 @@ const Exam = () => {
         <p><strong>Lead and regulate India's insurance sector.</strong></p>
       </div>
 
-      {/* Card 5 */}
+
       <div className="box">
         <img
-          src='public/nhb new.png'
+          src='/nhb new.png'
           alt="NHB Logo"
           className="exam-image"
         />
@@ -70,10 +66,9 @@ const Exam = () => {
         <p>Shelter being the main life asset, be the one who approves housing</p>
       </div>
 
-      {/* Card 6 */}
       <div className="box">
         <img
-          src='public/PFRDA_L new.png'
+          src='/PFRDA_L new.png'
           alt="PFRDA Logo"
           className="exam-image"
         />
@@ -83,10 +78,9 @@ const Exam = () => {
         <p>Secure future proof security and stability</p>
       </div>
 
-      {/* Card 7 */}
       <div className="box">
         <img
-          src='public/ifs new.png'
+          src='/ifs new.png'
           alt="IFSCA Logo"
           className="exam-image"
         />

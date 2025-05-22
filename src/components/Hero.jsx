@@ -61,7 +61,7 @@ useEffect(() => {
       <section className="hero">
         <video autoPlay loop muted>
           <source
-            src="public/WhatsApp Video 2025-05-14 at 3.13.02 PM.mp4"
+            src="/WhatsApp Video 2025-05-14 at 3.13.02 PM.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
@@ -86,13 +86,13 @@ useEffect(() => {
 
       <div className="floating-line">
         <div className="floating-icons">
-          <a href='https://www.sebi.gov.in' target="_blank" rel="noopener noreferrer"><img src='public/sebi new.png' alt='sebi' /></a>
-          <a href='https://www.nabard.org' target="_blank" rel="noopener noreferrer"><img src='public/nabard-old-removebg-preview.png' alt='nabard' /></a>
-          <a href='https://www.rbi.org.in' target="_blank" rel="noopener noreferrer"><img src='public/rbi new.png' alt='rbi' /></a>
-          <a href='https://www.nhb.org.in' target="_blank" rel="noopener noreferrer"><img src='public/nhb new.png' alt='nhb' /></a>
-          <a href=' https://www.pfrda.org.in' target="_blank" rel="noopener noreferrer"><img src='public/PFRDA_L new.png' alt='pfrda' /></a>
-          <a href='https://www.irdai.gov.in' target="_blank" rel="noopener noreferrer"><img src='public/irdai new.png' alt='irdai' /></a>
-          <a href='https://www.ifsca.gov.in/' target="_blank" rel="noopener noreferrer"><img src='public/ifs new.png' alt='irdai' /></a>
+          <a href='https://www.sebi.gov.in' target="_blank" rel="noopener noreferrer"><img src='/sebi new.png' alt='sebi' /></a>
+          <a href='https://www.nabard.org' target="_blank" rel="noopener noreferrer"><img src='/nabard-old-removebg-preview.png' alt='nabard' /></a>
+          <a href='https://www.rbi.org.in' target="_blank" rel="noopener noreferrer"><img src='/rbi new.png' alt='rbi' /></a>
+          <a href='https://www.nhb.org.in' target="_blank" rel="noopener noreferrer"><img src='/nhb new.png' alt='nhb' /></a>
+          <a href=' https://www.pfrda.org.in' target="_blank" rel="noopener noreferrer"><img src='/PFRDA_L new.png' alt='pfrda' /></a>
+          <a href='https://www.irdai.gov.in' target="_blank" rel="noopener noreferrer"><img src='/irdai new.png' alt='irdai' /></a>
+          <a href='https://www.ifsca.gov.in/' target="_blank" rel="noopener noreferrer"><img src='/ifs new.png' alt='irdai' /></a>
         </div>
       </div>
       <div ref={testimonialsRef} className="testimonials-title">
@@ -108,7 +108,7 @@ useEffect(() => {
   <div className="box">
     <div className="box-inner">
       <div className="box-front">
-        <img src="public/WhatsApp Image 2025-05-14 at 2.48.21 PM.jpeg" alt="Box 1" className="box-image" />
+        <img src="/WhatsApp Image 2025-05-14 at 2.48.21 PM.jpeg" alt="Box 1" className="box-image" />
         <h2>AKASH</h2>
         <h3>RBI GRADE B, AIR-91</h3>
         <p>Classroom Student</p>
@@ -127,7 +127,7 @@ useEffect(() => {
   <div className="box">
     <div className="box-inner">
       <div className="box-front">
-        <img src="public/WhatsApp Image 2025-05-14 at 2.48.22 PM (1).jpeg" alt="Box 2" className="box-image" />
+        <img src="/WhatsApp Image 2025-05-14 at 2.48.22 PM (1).jpeg" alt="Box 2" className="box-image" />
         <h2>ANOOP RAJ</h2>
         <h3>IRDAI Assistant Manager</h3>
         <p>Online Student</p>
@@ -146,7 +146,7 @@ useEffect(() => {
   <div className="box">
     <div className="box-inner">
       <div className="box-front">
-        <img src="public/WhatsApp Image 2025-05-14 at 2.48.22 PM.jpeg" alt="Box 3" className="box-image" />
+        <img src="/WhatsApp Image 2025-05-14 at 2.48.22 PM.jpeg" alt="Box 3" className="box-image" />
         <h2>Nishant Roy</h2>
         <h3>SEBI IT Officer</h3>
         <p>Interview Guidance</p>
@@ -165,7 +165,7 @@ useEffect(() => {
   <div className="box">
     <div className="box-inner">
       <div className="box-front">
-        <img src='public/WhatsApp Image 2025-05-15 at 6.14.42 PM.jpeg' alt="Box 4" className="box-image" />
+        <img src='/WhatsApp Image 2025-05-15 at 6.14.42 PM.jpeg' alt="Box 4" className="box-image" />
         <h2>Arjit Singh</h2>
         <h3>NHB Assistant Manager</h3>
         <p>Mains + Interview Student</p>
@@ -184,7 +184,7 @@ useEffect(() => {
   <div className="box">
     <div className="box-inner">
       <div className="box-front">
-        <img src='public/WhatsApp Image 2025-05-21 at 11.56.36 PM.jpeg' alt="Box 5" className="box-image" />
+        <img src='/WhatsApp Image 2025-05-21 at 11.56.36 PM.jpeg' alt="Box 5" className="box-image" />
         <h2>Prabhat Jha</h2>
         <h3>NABARD Grade A</h3>
         <p>Full Course Enrollee</p>
@@ -205,7 +205,7 @@ useEffect(() => {
     <div className="box">
       <div className="box-inner">
         <div className="box-front">
-          <img src="public/1070509.webp" alt="Box 5" className="box-image" />
+          <img src="/1070509.webp" alt="Box 5" className="box-image" />
           <h2>You can be the next</h2>
   <a href='https://docs.google.com/forms/d/1-Chp5eZwVJlgHfJMrXgv8EBGqP5OIlW1BJLeJhmrzsc' target="_blank" rel="noopener noreferrer">
   <button className="join-btn">

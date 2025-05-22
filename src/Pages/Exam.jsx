@@ -7,7 +7,7 @@ const exams = [
     subtitle: "Any Graduate",
     age: "Age:(21 - 30), 25LPA+ 🤑",
     stages: "Pre, Mains, Interview",
-    img: "public/rbi new.png",
+    img: "/rbi new.png",
     syllabus: "RBI Syllabus involves Phase I (GA, Reasoning, Quant, English), Phase II (Economic & Social Issues, Finance & Management), and Interview."
   },
   {
@@ -15,7 +15,7 @@ const exams = [
     subtitle: "Any Graduate and Specialist Course",
     age: "Age:(21 - 30), 35LPA+ 🤩",
     stages: "Pre, Mains, Interview",
-    img: "public/sebi new.png",
+    img: "/sebi new.png",
     syllabus: "SEBI syllabus involves Reasoning, General Awareness, Finance & Management, and Subject-specific papers."
   },
   {
@@ -23,7 +23,7 @@ const exams = [
     subtitle: "Any Graduate and Specialist Course",
     age: "Age:(21 - 30), 20LPA+ 🥰",
     stages: "Pre, Mains, Interview",
-    img: "public/nabard-old-removebg-preview.png",
+    img: "/nabard-old-removebg-preview.png",
     syllabus: "NABARD exam has Economics & Social issues, Agriculture & Rural Development, and Specific stream papers."
   },
   {
@@ -31,7 +31,7 @@ const exams = [
     subtitle: "Any Graduate",
     age: "Age:(21 - 30), 20LPA+ 🫡",
     stages: "Pre, Mains, Interview",
-    img: "public/nhb new.png",
+    img: "/nhb new.png",
     syllabus: "NHB syllabus includes Reasoning, Quantitative aptitude, English, General awareness, and Housing finance."
   },
   {
@@ -39,7 +39,7 @@ const exams = [
     subtitle: "Any Graduate",
     age: "Age:(21 - 30), 25LPA+ ☺️",
     stages: "Pre, Mains, Interview",
-    img: "public/new nps.png",
+    img: "/new nps.png",
    syllabus: "NPS includes English, Reasoning, Quantitative Aptitude, GA, Speaclist syllabus, followed by Mains and interview."
     
   },
@@ -48,7 +48,7 @@ const exams = [
     subtitle: "Any Graduate",
     age: "Age:(21 - 30), 30LPA+ 🥳",
     stages: "Pre, Mains, Interview",
-    img: "public/PFRDA_L new.png",
+    img: "/PFRDA_L new.png",
     syllabus: "PFRDA includes English, Reasoning, Finance, and Regulatory Framework knowledge."
   },
   {
@@ -56,7 +56,7 @@ const exams = [
     subtitle: "Any Graduate",
     age: "Age:(21 - 30), 30LPA+ 😎",
     stages: "Pre, Mains, Interview",
-    img: "public/ifs new.png",
+    img: "/ifs new.png",
     syllabus: "IFSCA exam covers International financial services, Finance, Economics, and Reasoning."
   },
    {
@@ -64,7 +64,7 @@ const exams = [
     subtitle: "Any Graduate",
     age: "Age:(21 - 30), 25LPA+ 🤗",
     stages: "Pre, Mains, Interview",
-    img: "public/irdai new.png",
+    img: "/irdai new.png",
     syllabus: "IRDAI includes English, Reasoning, Quantitative Aptitude, Insurance, and Financial market awareness."
   }
 ];
@@ -77,7 +77,6 @@ const Exam = () => {
           <input type="checkbox" className="card-toggle" hidden />
           <div className="box">
             <div className="box-inner">
-              {/* Front Side */}
               <div className="box-front">
                 <img src={exam.img} alt={exam.title} className="exam-image" />
                 <h3>{exam.title}</h3>
@@ -91,7 +90,6 @@ const Exam = () => {
                 )}
               </div>
 
-              {/* Back Side */}
               <div className="box-back">
                 <h3>{exam.title} Syllabus</h3>
                 <p>{exam.syllabus}</p>
