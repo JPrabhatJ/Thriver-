@@ -1,111 +1,107 @@
 import React from 'react';
 import "../css/Exam.css";  
 
+const exams = [
+  {
+    title: "RBI Grade B",
+    subtitle: "Any Graduate",
+    age: "Age:(21 - 30), 25LPA+ 🤑",
+    stages: "Pre, Mains, Interview",
+    img: "public/rbi new.png",
+    syllabus: "RBI Syllabus involves Phase I (GA, Reasoning, Quant, English), Phase II (Economic & Social Issues, Finance & Management), and Interview."
+  },
+  {
+    title: "SEBI Grade A & B",
+    subtitle: "Any Graduate and Specialist Course",
+    age: "Age:(21 - 30), 35LPA+ 🤩",
+    stages: "Pre, Mains, Interview",
+    img: "public/sebi new.png",
+    syllabus: "SEBI syllabus involves Reasoning, General Awareness, Finance & Management, and Subject-specific papers."
+  },
+  {
+    title: "NABARD Grade A & B",
+    subtitle: "Any Graduate and Specialist Course",
+    age: "Age:(21 - 30), 20LPA+ 🥰",
+    stages: "Pre, Mains, Interview",
+    img: "public/nabard-old-removebg-preview.png",
+    syllabus: "NABARD exam has Economics & Social issues, Agriculture & Rural Development, and Specific stream papers."
+  },
+  {
+    title: "NHB Grade A",
+    subtitle: "Any Graduate",
+    age: "Age:(21 - 30), 20LPA+ 🫡",
+    stages: "Pre, Mains, Interview",
+    img: "public/nhb new.png",
+    syllabus: "NHB syllabus includes Reasoning, Quantitative aptitude, English, General awareness, and Housing finance."
+  },
+  {
+    title: "NPS Trust",
+    subtitle: "Any Graduate",
+    age: "Age:(21 - 30), 25LPA+ ☺️",
+    stages: "Pre, Mains, Interview",
+    img: "public/new nps.png",
+   syllabus: "NPS includes English, Reasoning, Quantitative Aptitude, GA, Speaclist syllabus, followed by Mains and interview."
+    
+  },
+  {
+    title: "PFRDA Grade A",
+    subtitle: "Any Graduate",
+    age: "Age:(21 - 30), 30LPA+ 🥳",
+    stages: "Pre, Mains, Interview",
+    img: "public/PFRDA_L new.png",
+    syllabus: "PFRDA includes English, Reasoning, Finance, and Regulatory Framework knowledge."
+  },
+  {
+    title: "IFSCA",
+    subtitle: "Any Graduate",
+    age: "Age:(21 - 30), 30LPA+ 😎",
+    stages: "Pre, Mains, Interview",
+    img: "public/ifs new.png",
+    syllabus: "IFSCA exam covers International financial services, Finance, Economics, and Reasoning."
+  },
+   {
+    title: "IRDAI Grade A & B",
+    subtitle: "Any Graduate",
+    age: "Age:(21 - 30), 25LPA+ 🤗",
+    stages: "Pre, Mains, Interview",
+    img: "public/irdai new.png",
+    syllabus: "IRDAI includes English, Reasoning, Quantitative Aptitude, Insurance, and Financial market awareness."
+  }
+];
 
 const Exam = () => {
   return (
     <div className="six-boxes">
-      <div className="box">
-          <img
-            src='public/rbi new.png'  
-            alt="Exam 1"
-            className="exam-image"
-          />
-          <h3>RBI Grade B</h3>
-          <h4>Any Graduate</h4>
-          <p><strong>Age:(21 - 30),</strong> 25LPA+ 🤑</p>
-          <p><strong>Exam Stages:</strong>Pre, Mains, Interview</p> 
-        </div>
-        <div className="box">
-          <img
-            src='public/sebi new.png'
-            alt="Exam 2"
-            className="exam-image"
-          />
-          <h3>SEBI Grade A & B</h3>
-          <h4>Any Graduate and Specialist Course</h4>
-          <p><strong>Age:(21 - 30),</strong> 35LPA+ 🤩</p>
-          <p><strong>Exam Stages:</strong>Pre, Mains, Interview</p>
-        </div>
+      {exams.map((exam, index) => (
+        <label className="flip-card" key={index}>
+          <input type="checkbox" className="card-toggle" hidden />
+          <div className="box">
+            <div className="box-inner">
+              {/* Front Side */}
+              <div className="box-front">
+                <img src={exam.img} alt={exam.title} className="exam-image" />
+                <h3>{exam.title}</h3>
+                <h4>{exam.subtitle}</h4>
+                <p><strong>{exam.age}</strong></p>
+                {exam.stages && <p><strong>Exam Stages:</strong> {exam.stages}</p>}
+                {exam.link && (
+                  <a href={exam.link} target="_blank" rel="noopener noreferrer">
+                    <button className="join">Join us</button>
+                  </a>
+                )}
+              </div>
 
-        {/* Card 3 */}
-        <div className="box">
-          <img
-            src='public/nabard-old-removebg-preview.png'
-            className="exam-image"
-          />
-         <h3>NABARD Grade A & B</h3>
-          <h4>Any Graduate and Specialist Course</h4>
-          <p><strong>Age:(21 - 30),</strong> 20LPA+ 🥰</p>
-          <p><strong>Exam Stages:</strong>Pre, Mains, Interview</p>
-        </div>
-
-        {/* Card 4 */}
-        <div className="box">
-          <img
-            src='public/irdai new.png'
-            alt="Exam 4"
-            className="exam-image"
-          />
-          <h3>IRDAI Grade A & B</h3>
-          <h4>Any Graduate</h4>
-          <p><strong>Age:(21 - 30),</strong> 25LPA+ 🤗</p>
-          <p><strong>Exam Stages:</strong>Pre, Mains, Interview</p>
-        </div>
-
-       
-
-<div className="box">
-  <img
-    src='public/1070509.webp'
-    alt="Exam 6"
-    className="exam-image"
-  />
-  <h3>You Can be the next</h3>
-  <p><strong>With right guidance,</strong> strategy </p>
-          <p><strong>1:1 Guidance </strong>and mentorship</p>
-  <button className="join">Join us</button>
-</div>
-        <div className="box">
-          <img
-            src='public/PFRDA_L new.png'
-            alt="Exam 6"
-            className="exam-image"
-          />
-          <h3>PFRDA Grade A</h3>
-          <h4>Any Graduate</h4>
-          <p><strong>Age:(21 - 30),</strong> 30LPA+ 🥳</p>
-          <p><strong>Exam Stages:</strong>Pre, Mains, Interview</p>
-        </div>
-
-        <div className="box">
-          <img
-            src='public/ifs new.png'
-            alt="Exam 6"
-            className="exam-image"
-          />
-          <h3>IFSCA</h3>
-          <h4>Any Graduate</h4>
-          <p><strong>Age:(21 - 30),</strong> 30LPA+ 😎</p>
-          <p><strong>Exam Stages:</strong>Pre, Mains, Interview</p>
-        </div>
-
-         {/* Card 7 */}
-         <div className="box">
-          <img
-            src='public/nhb new.png'
-            alt="Exam 5"
-            className="exam-image"
-          />
-          <h3>NHB Grade A</h3>
-          <h4>Any Graduate</h4>
-          <p><strong>Age:(21 - 30),</strong> 20LPA+ 🫡</p>
-          <p><strong>Exam Stages:</strong>Pre, Mains, Interview</p>
-        </div>
-
-
-    </div> 
+              {/* Back Side */}
+              <div className="box-back">
+                <h3>{exam.title} Syllabus</h3>
+                <p>{exam.syllabus}</p>
+              </div>
+            </div>
+          </div>
+        </label>
+      ))}
+    </div>
   );
-}
+};
 
 export default Exam;

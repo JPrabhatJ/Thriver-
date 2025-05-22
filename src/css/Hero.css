@@ -67,12 +67,21 @@
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15); 
 }
 
-.hero-btn.secondary {
-  background-color: #5560ff;
+.hero-btn.secondary {  background-color: #0d00ff;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); 
+  transform: translateY(0); 
 }
 
+
 .hero-btn.secondary:hover {
-  background-color: #1e2dff;
+  background-color: #625aff;
   transform: translateY(-4px); 
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15); 
 }
@@ -93,17 +102,16 @@
   border-radius: 20px;       
 }
 
-/* Apply hover effect on each individual icon */
 .floating-icons a {
   display: inline-block;
   width: 80px;             
   height: 80px;             
   margin: 0 15px;         
-  transition: transform 0.3s ease; /* Smooth zoom-out transition */
+  transition: transform 0.3s ease; 
 }
 
 .floating-icons a:hover {
-  transform: scale(1.1); /* Scale down the logo by 10% on hover */
+  transform: scale(1.1); 
 }
 
 .floating-icons img {
@@ -124,14 +132,13 @@
   }
 }
 
-
 .four-boxes {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
   gap: 2rem;
   padding: 3rem 2rem;
   margin-top: 4rem;
-  background-color: #f8f8f8;
+  background-color: #ffffff;
   visibility: visible;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
@@ -152,7 +159,7 @@
   }
 }
 
-/* Card Container with 3D perspective */
+
 .card-container {
   perspective: 1000px; /* Adds depth to the 3D flip effect */
 }
@@ -160,8 +167,7 @@
 /* The card itself */
 /* Container for the box */
 .box {
-  background-image: url();
-  background-color: #fff;
+  background-color: #000000;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -171,12 +177,12 @@
   transition: all 0.3s ease;
   cursor: pointer;
   position: relative;
-  transform-style: preserve-3d; /* Maintain 3D space for children elements */
+  transform-style: preserve-3d; 
 }
 
 /* Hover effect to flip the card */
 .box:hover {
-  transform: rotateY(180deg); /* Flip 180 degrees on hover */
+  transform: rotateY(270deg); /* Flip 180 degrees on hover */
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
   background-color: #ffffff; 
   border: 2px solid rgb(0, 255, 0); /* Green border on hover */
@@ -189,9 +195,8 @@
   text-align: left;
 }
 
-/* Right section for the image */
 .box-right {
-  width: 50%; /* Take up the other half of the box */
+  width: 50%; 
   padding-left: 1rem;
   display: flex;
   justify-content: center;
@@ -206,12 +211,11 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* The front and back of the card */
 .box .front, .box .back {
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden; /* Hide back face when flipped */
+  backface-visibility: hidden; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -219,21 +223,20 @@
 
 /* Front of the card */
 .box .front {
-  background-color: #000000; /* Customize with your front content */
+  background-color: #000000; 
 }
 
 .box h2, .box h3, .box h4 {
-  font-size: 1.8rem;  /* Larger text for the title */
+  font-size: 1.8rem;  
   margin-bottom: 1rem;
   color: #000000;
 }
 
-/* Add a class to reveal testimonial text */
+
 .box.show-testimonial .back {
-  opacity: 1; /* Make the back visible */
+  opacity: 1; 
 }
 
-/* Content sections inside the box */
 .box-left, .box-middle {
   text-align: left;
   padding-left: 1rem; 
@@ -244,7 +247,6 @@
   padding: 1rem;
 }
 
-/* Title and description inside the box */
 .box h3 {
   font-size: 1.5rem;
   color: #333;
@@ -265,15 +267,15 @@
 }
 
 
-/* Mobile responsiveness */
+
 @media (max-width: 1024px) {
   .box {
-    flex-direction: column; /* Stack left and right content vertically */
+    flex-direction: column; 
   }
 
   .box-left, .box-right {
-    width: 100%; /* Make both sections full-width on small screens */
-    padding: 0; /* Remove padding for small screens */
+    width: 100%; 
+    padding: 0; 
   }
 
   .box-image {
@@ -314,41 +316,35 @@
 
 .accordion-section {
   width: 100%;
-  min-height: 100vh;
   margin: 0;
   padding: 3rem 2rem;
-  background-color: #f4f4f4;
-  border-radius: 8px;
-  box-sizing: border-box; /* Ensure padding doesn't increase the height unnecessarily */
+  background-color: #ffffff; 
+  box-sizing: border-box; 
 }
-  
-
 
 .accordion-section h2 {
   font-size: 2.5rem;
   text-align: center;
-  color: #333;
+  color: #000000;
   margin-bottom: 1.5rem;
   font-weight: bold;
 }
 
-/* Accordion Container */
+
 .accordion {
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
 /* Individual Accordion Item */
 .accordion-item {
   margin-bottom: 1rem;
-  border-bottom: 1px solid #ddd;
 }
 
-/* Accordion Header (Button) */
+
 .accordion-header {
-  background-color: #2a3d66;
-  color: white;
+  background-color: #1c59db;
+  color: rgb(255, 255, 255);
   padding: 1rem 2rem;
   width: 100%;
   text-align: left;
@@ -364,18 +360,17 @@
 }
 
 .accordion-header:hover {
-  background-color: #1f2a3a;
+  background-color: #0d69f4;
 }
 
 /* Accordion Content */
 .accordion-content {
   padding: 1rem 2rem;
-  background-color: #f9f9f9;
-  color: #555;
+  background-color: #ffffff;
+  color: #000000;
   font-size: 1.1rem;
   line-height: 1.6;
   display: none; /* Content is hidden by default */
-  border-top: 1px solid #ddd;
 }
 
 /* Show Content for Active Accordion Item */
@@ -391,19 +386,28 @@
 }
 
 .accordion-item.active .accordion-header::after {
-  content: '\2212'; /* Unicode character for minus symbol */
+  content: '\2212'; 
   transform: rotate(180deg);
 }
 
-/* Accordion Header Active State */
 .accordion-item.active .accordion-header {
-  background-color: #1f2a3a; /* Darker background for active item */
+  background-color: #5891e5;
+}
+
+
+.testimonials{
+  background-color: #000000;
 }
 
 .testimonials-title {
   text-align: center;
   margin-top: 60px;
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 30px;
+  text-decoration: underline; 
 }
+
 
 .testimonials-title h2 {
   font-size: 2rem;
@@ -411,14 +415,87 @@
   margin-bottom: 30px;
 }
 
-/* Global Styles (This can be at the top of your CSS file) */
+
 
 body {
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden; 
 }
 
 
+.flip-card {
+  perspective: 1000px;
+  display: block;
+}
 
+.card-toggle {
+  display: none;
+}
 
+.box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card-toggle:checked ~ .box .box-inner {
+  transform: rotateY(180deg);
+}
+
+.box-front,
+.box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.box-front {
+  background-color: #ffffff;
+  z-index: 2;
+}
+
+.box-back {
+  background-color: #ffffff;
+  transform: rotateY(180deg);
+  text-align: left;
+  overflow-y: auto;
+}
+
+.join-btn {
+  margin-top: 15px; 
+  padding: 8px 16px; 
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 24px; 
+}
+
+.join-button:hover {
+  background-color: #0056b3;
+}
+
+.six-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 3rem 2rem;
+  margin-top: 80px;
+  background-color: rgb(0, 0, 0); 
+  background-image:
+    linear-gradient(white 1px, transparent 1px), 
+    linear-gradient(90deg, white 1px, transparent 1px); 
+  background-size: 20px 20px;
+}
 
 

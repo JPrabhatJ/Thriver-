@@ -10,7 +10,7 @@ body {
   background-color: #000000;
   font-weight: 500;
   color: #ffffff;
-  padding: 0rem 0rem;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,7 +22,7 @@ body {
   box-sizing: border-box;
 }
 
-/* Navbar Sections - Flex-based 3-column layout */
+/* Navbar Layout */
 .logo,
 .navbar-text,
 .nav-buttons {
@@ -41,7 +41,7 @@ body {
   width: auto;
 }
 
-/* Middle Text - Centered */
+/* Center Text */
 .navbar-text {
   text-align: center;
   white-space: nowrap;
@@ -56,20 +56,18 @@ body {
   margin: 0;
 }
 
-/* Right-side Navigation Buttons */
+/* Navigation Links */
 .nav-buttons {
   display: flex;
   gap: 2rem;
   justify-content: flex-end;
   flex-wrap: wrap;
   box-sizing: border-box;
-  width: 100%;
   padding: 0 1rem;
   overflow-x: hidden;
   color: aqua;
 }
 
-/* Navigation Links */
 .nav-buttons a {
   color: aqua;
   text-decoration: none;
@@ -81,8 +79,6 @@ body {
 .nav-buttons a:hover {
   color: #00aaff;
 }
-
-/* SALE Banner */
 .sale-banner {
   position: fixed;
   top: 0;
@@ -95,16 +91,19 @@ body {
   height: 2.5rem;
   display: flex;
   align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  visibility: visible; /* Make sure it's visible immediately */
+  opacity: 1;
 }
 
 .scroll-text {
   display: inline-block;
   white-space: nowrap;
   padding-left: 100%;
-  animation: scroll-left 35s linear infinite;
+  animation: scroll-left 20s linear infinite; /* Scroll immediately with no delay */
   visibility: visible;
   opacity: 1;
-  transition: visibility 0s, opacity 0s;
 }
 
 @keyframes scroll-left {
@@ -116,14 +115,44 @@ body {
   }
 }
 
-/* Responsive Tweaks */
+
+
+/* Responsive Navbar */
 @media (max-width: 768px) {
-  .nav-buttons {
-    gap: 1rem;
-    justify-content: center;
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0.5rem;
   }
+
+  .navbar-logo {
+    height: 70px;
+  }
+
+  .navbar-text p {
+    font-size: 1.2rem;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
   .nav-buttons a {
     font-size: 1rem;
   }
 }
 
+@media (max-width: 480px) {
+  .navbar-text p {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  .navbar-logo {
+    height: 50px;
+  }
+}

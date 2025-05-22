@@ -7,28 +7,33 @@ function Hero() {
   const [showBoxes, setShowBoxes] = useState(false);
   const [activeIndex, setActiveIndex] = useState(null); 
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setShowBoxes(true);
-        }
-      },
-      {
-        threshold: 0.5,
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        setShowBoxes(true);
       }
-    );
-
-    if (scrollRef.current) {
-      observer.observe(scrollRef.current);
+    },
+    {
+      threshold: 0,
     }
+  );
 
-    return () => {
-      if (scrollRef.current) {
-        observer.unobserve(scrollRef.current);
-      }
-    };
-  }, []);
+  if (scrollRef.current) {
+    observer.observe(scrollRef.current);
+
+    if (scrollRef.current.getBoundingClientRect().top < window.innerHeight) {
+      setShowBoxes(true);
+    }
+  }
+
+  return () => {
+    if (scrollRef.current) {
+      observer.unobserve(scrollRef.current);
+    }
+  };
+}, []);
+
 
   const handleScroll = () => {
     if (testimonialsRef.current) {
@@ -43,7 +48,6 @@ function Hero() {
     });
   };
 
-  // Accordion toggle function
   const toggleAccordion = (index) => {
     setActiveIndex(activeIndex === index ? null : index);  
   };
@@ -66,14 +70,16 @@ function Hero() {
        
           <h1>Prepare for Govt. Job</h1>
           <p>
-            Which pays <span className="cut-number"><span className="cut">10</span></span>,
-            <span className="cut-number"><span className="cut">15</span></span>, 25LPA+ 🤑
+            Which pays <span className="cut-number"><span className="cut">10LPA</span></span>,
+            <span className="cut-number"><span className="cut">15LPA</span></span>, 25LPA+ 🤑
           </p>
           <div className="hero-buttons">
             <button className="hero-btn" onClick={handleScroll}>
              Our Result
             </button>
+            <a href='https://docs.google.com/forms/d/1-Chp5eZwVJlgHfJMrXgv8EBGqP5OIlW1BJLeJhmrzsc' target="_blank" rel="noopener noreferrer">
             <button className="hero-btn secondary">Get Started</button>
+            </a>
           </div>
         </div>
       </section>
@@ -97,50 +103,129 @@ function Hero() {
         ref={scrollRef}
         className={`four-boxes ${showBoxes ? "fade-in" : "hidden"}`}
       >
-        <div className="box">
-          <img
-            src="public/WhatsApp Image 2025-05-14 at 2.48.21 PM.jpeg"
-            alt="Box 1"
-            className="box-image"
-          />
-          <h2>AKASH</h2>
-          <h3>RBI GRADE B, AIR-91</h3>
-          <p>Classroom Student</p>
-          <p>Roll No. 307034304</p>
+        <label className="flip-card">
+  <input type="checkbox" className="card-toggle" />
+  <div className="box">
+    <div className="box-inner">
+      <div className="box-front">
+        <img src="public/WhatsApp Image 2025-05-14 at 2.48.21 PM.jpeg" alt="Box 1" className="box-image" />
+        <h2>AKASH</h2>
+        <h3>RBI GRADE B, AIR-91</h3>
+        <p>Classroom Student</p>
+        <p>Roll No. 307034304</p>
+      </div>
+      <div className="box-back">
+        <h3>Preparation Insights</h3>
+        <p>AKASH cracked RBI Grade B using our advanced test series and revision planner. Strategic mocks and detailed mentorship were key to his AIR-91 success.</p>
+      </div>
+    </div>
+  </div>
+</label>
+
+<label className="flip-card">
+  <input type="checkbox" className="card-toggle" />
+  <div className="box">
+    <div className="box-inner">
+      <div className="box-front">
+        <img src="public/WhatsApp Image 2025-05-14 at 2.48.22 PM (1).jpeg" alt="Box 2" className="box-image" />
+        <h2>ANOOP RAJ</h2>
+        <h3>IRDAI Assistant Manager</h3>
+        <p>Online Student</p>
+        <p>Roll No. 5603070674</p>
+      </div>
+      <div className="box-back">
+        <h3>Preparation Insights</h3>
+        <p>Anoop utilized our online-only plan. Regular doubt-clearing sessions, pre-recorded content, and speed tests helped him secure his role at IRDAI.</p>
+      </div>
+    </div>
+  </div>
+</label>
+
+<label className="flip-card">
+  <input type="checkbox" className="card-toggle" />
+  <div className="box">
+    <div className="box-inner">
+      <div className="box-front">
+        <img src="public/WhatsApp Image 2025-05-14 at 2.48.22 PM.jpeg" alt="Box 3" className="box-image" />
+        <h2>Nishant Roy</h2>
+        <h3>SEBI IT Officer</h3>
+        <p>Interview Guidance</p>
+        <p>Roll No. 230160307004</p>
+      </div>
+      <div className="box-back">
+        <h3>Preparation Insights</h3>
+        <p>Nishant cleared SEBI with our IT-specific test plan and expert-led technical interview training. His confidence and preparation stood out.</p>
+      </div>
+    </div>
+  </div>
+</label>
+
+<label className="flip-card">
+  <input type="checkbox" className="card-toggle" />
+  <div className="box">
+    <div className="box-inner">
+      <div className="box-front">
+        <img src='public/WhatsApp Image 2025-05-15 at 6.14.42 PM.jpeg' alt="Box 4" className="box-image" />
+        <h2>Arjit Singh</h2>
+        <h3>NHB Assistant Manager</h3>
+        <p>Mains + Interview Student</p>
+        <p>Roll No. 1603045554</p>
+      </div>
+      <div className="box-back">
+        <h3>Preparation Insights</h3>
+        <p>Arjit joined after prelims and aced mains with our focused strategy. Daily revision targets and mock interviews helped him confidently crack NHB.</p>
+      </div>
+    </div>
+  </div>
+</label>
+
+<label className="flip-card">
+  <input type="checkbox" className="card-toggle" />
+  <div className="box">
+    <div className="box-inner">
+      <div className="box-front">
+        <img src='public/WhatsApp Image 2025-05-21 at 11.56.36 PM.jpeg' alt="Box 5" className="box-image" />
+        <h2>Prabhat Jha</h2>
+        <h3>NABARD Grade A</h3>
+        <p>Full Course Enrollee</p>
+        <p>Roll No. 2104030288</p>
+      </div>
+      <div className="box-back">
+        <h3>Preparation Insights</h3>
+        <p>Prabhat followed our end-to-end guidance program with weekly mentorship calls and structured test series. He cracked NABARD with confidence.</p>
+      </div>
+      
+    </div>
+  </div>
+</label>
+
+<div className="flip-card">
+  <label> 
+    <input type="checkbox" className="card-toggle" />
+    <div className="box">
+      <div className="box-inner">
+        <div className="box-front">
+          <img src="public/1070509.webp" alt="Box 5" className="box-image" />
+          <h2>You can be the next</h2>
+  <a href='https://docs.google.com/forms/d/1-Chp5eZwVJlgHfJMrXgv8EBGqP5OIlW1BJLeJhmrzsc' target="_blank" rel="noopener noreferrer">
+  <button className="join-btn">
+    Join Now
+  </button>
+</a>
+
         </div>
-        <div className="box">
-          <img
-            src="public/WhatsApp Image 2025-05-14 at 2.48.22 PM (1).jpeg"
-            alt="Box 2"
-            className="box-image"
-          />
-           <h2>ANOOP RAJ</h2>
-          <h3>IRDAI Assistant Manager</h3>
-          <p>Online Student</p>
-          <p>Roll No. 5603070674</p>
+        <div className="box-back">
+          <h3>Join for 1:1 Mentorship</h3>
+          <p>With uptomst care we will understand your background and prepare a roadmap for the same for your rapid and meaningful preparation.</p>
         </div>
-        <div className="box">
-          <img
-            src="public/WhatsApp Image 2025-05-14 at 2.48.22 PM.jpeg"
-            alt="Box 3"
-            className="box-image"
-          />
-       <h2>Nishant Roy</h2>
-          <h3>SEBI IT Officer</h3>
-          <p>Interview Guidance</p>
-          <p>Roll No. 230160307004</p>
-        </div>
-        <div className="box">
-          <img
-            src='public/WhatsApp Image 2025-05-15 at 6.14.42 PM.jpeg'
-            alt="Box 4"
-            className="box-image"
-          />
-          <h2>Arjit Singh</h2>
-          <h3>NHB Assitant Manager</h3>
-          <p>Mains + Interview Student</p>
-          <p>Roll No. 1603045554</p>
-        </div>
+      </div>
+    </div>
+  </label>
+</div>
+
+
+
+
       </div>
       <section className="accordion-section">
   <h2>Topper's No.1 Choice since 2020</h2>
@@ -180,9 +265,20 @@ function Hero() {
       {activeIndex === 2 && (
         <div className="accordion-content">
           <p>
-
-ChatGPT said:
 "The duration of our courses depends on your starting level and the depth of the program. For beginners, it may take a few months to cover all fundamentals, while advanced courses may take less time. We also offer flexible study schedules to accommodate your pace, ensuring you get the most out of your learning experience."</p>
+        </div>
+      )}
+    </div>
+     <div
+      className={`accordion-item ${activeIndex === 3 ? 'active' : ''}`}
+    >
+      <button className="accordion-header" onClick={() => toggleAccordion(3)}>
+        What is the scheme for money back?
+      </button>
+      {activeIndex === 3 && (
+        <div className="accordion-content">
+          <p>
+"we provide money back for first 30 days if you dont like curriculum, i am sure you will like but still we dont force and return money with no questions asked."</p>
         </div>
       )}
     </div>

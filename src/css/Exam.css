@@ -8,27 +8,72 @@
   background-image:
     linear-gradient(white 1px, transparent 1px), 
     linear-gradient(90deg, white 1px, transparent 1px); 
-  background-size: 20px 20px; 
+  background-size: 20px 20px;
 }
 
+.flip-card {
+  perspective: 1500px; /* Deep perspective to give more depth */
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
 
-
+/* Hidden toggle */
+.card-toggle {
+  display: none;
+}
 
 .box {
-  background-color: #fff;
-  padding: 3rem;
+  background-color: #000000;
+  padding: 0;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   text-align: center;
   height: 400px;  
+  overflow: hidden;
+  position: relative;
+  cursor: pointer; /* To show the interaction */
+}
+
+.box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+/* Front and Back flip effect */
+.card-toggle:checked ~ .box .box-inner {
+  transform: rotateY(180deg); /* Flip the box */
+}
+
+.box-front,
+.box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  box-sizing: border-box;
+  backface-visibility: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  overflow: hidden; 
+  border-radius: 8px;
 }
 
+.box-front {
+  background-color: #fff;
+  z-index: 2;
+}
+
+.box-back {
+  background-color: #ffffff;
+  transform: rotateY(180deg);
+  text-align: left;
+  overflow-y: auto;
+}
 
 .exam-image {
   width: 120px; 
@@ -38,12 +83,23 @@
   margin-bottom: 1rem;  
 }
 
-.box:hover {
-  transform: translateY(-4px); 
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
-  background-color: #f5f0f0; 
+.exam-image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px; 
 }
 
+/* 3D Hover effect: X and Y rotation simulation */
+.box:hover .box-inner {
+  transform: rotateX(15deg) rotateY(15deg); /* Slight rotation on both axes */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add shadow to enhance 3D effect */
+}
+
+.box:hover {
+  transform: translateY(-4px); /* Lift effect */
+}
+
+/* Headings and text */
 .box h3 {
   font-size: 1.8rem;  
   margin-bottom: 1rem;
@@ -52,39 +108,16 @@
 .box p {
   font-size: 1.1rem;
   color: #000000;
-  line-height: 1.5; /
-}
-
-
-@media (max-width: 768px) {
-  .six-boxes {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .six-boxes {
-    grid-template-columns: 1fr; 
-  }
-}
-
-
-.box:hover {
-  transform: translateY(-4px); 
-}
-
-.exam-image {
-  width: 100%;
-  height: auto;
-  border-radius: 6px; 
+  line-height: 1.5;
 }
 
 h3 {
   font-size: 16px; 
-  color: #333;
+  color: #000000;
   margin-top: 10px; 
 }
 
+/* Button */
 button.join {
   margin-top: 15px; 
   padding: 8px 16px; 
@@ -100,4 +133,15 @@ button.join:hover {
   background-color: #0056b3;
 }
 
+/* Responsive */
+@media (max-width: 768px) {
+  .six-boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
+@media (max-width: 480px) {
+  .six-boxes {
+    grid-template-columns: 1fr; 
+  }
+}

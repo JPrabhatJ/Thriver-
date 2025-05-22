@@ -4,8 +4,10 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";  
 import Exam from "./Pages/Exam";   
-import Syllabus from "./Pages/Syllabus";  
+import Motivation from "./Pages/Motivation";   
 import ScrollToTop from "./Pages/ScrollToTop"; 
+import Contact from "./Pages/Contact";
+
 
 function App() {
   return (
@@ -15,7 +17,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Hero />} />   
         <Route path="/exam" element={<Exam />} /> 
-        <Route path="/syllabus" element={<Syllabus />} />
+        <Route path="/motivation" element={<Motivation />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>

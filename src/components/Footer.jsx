@@ -15,9 +15,9 @@ function Footer() {
           <a href='https://www.irdai.gov.in' target="_blank" rel="noopener noreferrer">IRDAI</a>
           <a href='https://www.ifsca.gov.in/' target="_blank" rel="noopener noreferrer">IFSCA</a>
 
-          {/* Internal Links */}
-          <Link to="/exam">Exams</Link>      {/* Updated with Link */}
-          <Link to="/syllabus">Syllabus</Link>  {/* Updated with Link */}
+          <Link to="/exam">Exams</Link>     
+          <Link to="/motivation">Motivation</Link> 
+          <Link to="/contact">Contact</Link> 
         </div>
       </div>
 

@@ -1,0 +1,72 @@
+.six-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 3rem 2rem;
+  margin-top: 80px;
+  background-color: rgb(0, 0, 0); 
+  background-image:
+    linear-gradient(rgb(49, 49, 49) 1px, transparent 1px), 
+    linear-gradient(90deg, rgb(49, 49, 49) 1px, transparent 1px); 
+  background-size: 20px 20px; 
+}
+
+.contact-container {
+  min-height: 100vh;
+  background-color: #000000; /* White background */
+  color: #ffffff;            /* White text for contrast */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #ffffff; /* Optional vibrant color */
+}
+
+.contact-container h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #ffffff; /* Softer secondary text */
+}
+
+.hero-btn {
+  background-color: #ff4081;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); 
+  transform: translateY(0); 
+}
+
+.hero-btn:hover {
+  background-color: #e73370;
+  transform: translateY(-4px); 
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15); 
+}
+
+.hero-btn.secondary:active {
+  transform: translateY(2px);
+  box-shadow: 0 3px 0 #15008f, 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Styled Join Now Button */
+@media (max-width: 768px) {
+  .contact-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .contact-container h2 {
+    font-size: 1.1rem;
+  }
+}
