@@ -192,7 +192,7 @@ useEffect(() => {
       </div>
       <div className="box-back">
         <h3>Preparation Insights</h3>
-        <p>Prabhat followed our end-to-end guidance program with weekly mentorship calls and structured test series. He cracked NABARD with confidence.</p>
+        <p>Prabhat followed our end-to-end guidance program with weekly mentorship calls and structured test series. He cracked NABARD in first attempt with confidence.</p>
       </div>
       
     </div>
