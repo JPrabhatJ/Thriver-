@@ -173,7 +173,7 @@ useEffect(() => {
       </div>
       <div className="box-back">
         <h3>Preparation Insights</h3>
-        <p>Arjit joined after prelims and aced mains with our focused strategy. Daily revision targets and mock interviews helped him confidently crack NHB.</p>
+        <p>Arjit joined after prelims and aced mains with our focused strategy. Daily revision of targets and weekly mock interviews helped him confidently crack NHB.</p>
       </div>
     </div>
   </div>
