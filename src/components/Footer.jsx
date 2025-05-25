@@ -32,6 +32,15 @@ function Footer() {
         <p>Visitors Today: {visitorsToday ?? 'Loading...'}</p>
         <p>&copy; {new Date().getFullYear()} Thriver. All rights reserved.</p>
       </div>
+      <div className="qr-png">
+
+  <img 
+    src="public/frame.png" 
+    alt="QR Code" 
+    className="footer-qr"
+  />
+</div>
+
     </footer>
   );
 }
