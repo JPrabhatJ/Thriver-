@@ -135,7 +135,7 @@ useEffect(() => {
       </div>
       <div className="box-back">
         <h3>Preparation Insights</h3>
-        <p>Anoop utilized our online-only plan. Regular doubt-clearing sessions, pre-recorded content, and speed tests helped him secure his role at IRDAI.</p>
+        <p>Anoop utilized our online-only plan. Regular doubt-clearing sessions, pre-recorded content, and speed tests helped him secure his dream role at IRDAI.</p>
       </div>
     </div>
   </div>
