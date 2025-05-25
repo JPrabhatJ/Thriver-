@@ -54,13 +54,13 @@
   /* Mobile responsiveness: stack the boxes on smaller screens */
   @media (max-width: 768px) {
     .six-boxes {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+      grid-template-columns: repeat(2, 1fr); 
     }
   }
   
   @media (max-width: 480px) {
     .six-boxes {
-      grid-template-columns: 1fr; /* 1 column on very small screens */
+      grid-template-columns: 1fr; 
     }
   }
   

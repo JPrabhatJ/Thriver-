@@ -83,7 +83,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #d400ff;
+  background-color: #E63946;
   color: #fff;
   overflow: hidden;
   white-space: nowrap;
@@ -93,7 +93,7 @@ body {
   align-items: center;
   font-size: 1.5rem;
   font-weight: bold;
-  visibility: visible; /* Make sure it's visible immediately */
+  visibility: visible; 
   opacity: 1;
 }
 
