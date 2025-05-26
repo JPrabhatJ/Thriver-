@@ -30,6 +30,7 @@ function Navbar() {
       <div className="sale-banner">
         <div className="scroll-text">
           Time is running out, so is your preparation. Enroll now 🚀
+          What is stopping you?
         </div>
       </div>
     </>

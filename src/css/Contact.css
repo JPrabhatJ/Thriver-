@@ -13,8 +13,8 @@
 
 .contact-container {
   min-height: 100vh;
-  background-color: #222121; /* White background */
-  color: #ffffff;            /* White text for contrast */
+  background-color: #222121; 
+  color: #ffffff;            
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,13 +27,13 @@
   font-size: 2rem;
   margin-bottom: 1rem;
   font-weight: 700;
-  color: #ffffff; /* Optional vibrant color */
+  color: #ffffff; 
 }
 
 .contact-container h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: #ffffff; /* Softer secondary text */
+  color: #ffffff; 
 }
 
 .hero-btn {
@@ -71,7 +71,6 @@
   }
 }
 
-/* ▼▼▼ New Styles for QR code and 'or' layout ▼▼▼ */
 
 .cta-section {
   display: flex;

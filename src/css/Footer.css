@@ -55,7 +55,7 @@ body, html {
 }
 
 .main-container {
-  min-height: 100vh;  /* Ensures the container stretches to at least full height */
+  min-height: 100vh;  
   display: flex;
   flex-direction: column;
 }
@@ -64,6 +64,6 @@ body, html {
   width: 100px;
   height: 100px;
   object-fit: contain;
-  margin-left: 1rem;  /* Space from text */
-  align-self: center; /* Vertically center in footer-right */
+  margin-left: 1rem;  
+  align-self: center;
 }

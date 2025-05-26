@@ -109,7 +109,7 @@ useEffect(() => {
     <div className="box-inner">
       <div className="box-front">
         <img src="/WhatsApp Image 2025-05-14 at 2.48.21 PM.jpeg" alt="Box 1" className="box-image" />
-        <h2>AKASH</h2>
+        <h2>AKASH SINGH</h2>
         <h3>RBI GRADE B, AIR-91</h3>
         <p>Classroom Student</p>
         <p>Roll No. 307034304</p>

@@ -30,7 +30,7 @@ function Footer() {
 
       <div className="footer-right">
         <p>Visitors Today: {visitorsToday ?? 'Loading...'}</p>
-        <p>&copy; {new Date().getFullYear()} Thriver. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Thriver. All Rights Reserved.</p>
       </div>
       <div className="qr-png">
 

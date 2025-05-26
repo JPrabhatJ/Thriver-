@@ -161,7 +161,7 @@
 
 
 .card-container {
-  perspective: 1000px; /* Adds depth to the 3D flip effect */
+  perspective: 1000px; 
 }
 
 

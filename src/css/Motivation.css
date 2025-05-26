@@ -1,39 +1,39 @@
-/* Container for the 2x3 grid of cards */
+
 .six-boxes {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns for 2x3 grid */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 2rem;
     padding: 3rem 2rem;
     background-color: #f8f8f8;
-    margin-top: 80px;  /* Add space to prevent the navbar from overlapping */
+    margin-top: 80px;  
   }
   
-  /* Individual Box/Card */
+
   .box {
     background-color: #fff;
-    padding: 3rem; /* Increase padding for more content space */
+    padding: 3rem; 
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     text-align: center;
-    height: 400px;  /* Make the boxes taller for more content */
+    height: 400px;  
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    overflow: hidden; /* Prevent overflow if content is too long */
+    overflow: hidden; 
   }
   
 
   .exam-image {
-    width: 120px;  /* Adjust image width */
-    height: 120px;  /* Adjust image height */
-    object-fit: cover;  /* Ensure image is cropped properly */
-    border-radius: 8px;  /* Round the corners of the image */
-    margin-bottom: 1rem;  /* Space between image and text */
+    width: 120px;  
+    height: 120px;  
+    object-fit: cover;  
+    border-radius: 8px;  
+    margin-bottom: 1rem;  
   }
   
-  /* Hover effect on card */
+
   .box:hover {
     transform: translateY(-4px); 
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
@@ -41,17 +41,17 @@
   }
   
   .box h3 {
-    font-size: 1.8rem;  /* Larger text for the title */
+    font-size: 1.8rem; 
     margin-bottom: 1rem;
   }
   
   .box p {
     font-size: 1.1rem;
     color: #555;
-    line-height: 1.5; /* Improve readability */
+    line-height: 1.5; 
   }
   
-  /* Mobile responsiveness: stack the boxes on smaller screens */
+  
   @media (max-width: 768px) {
     .six-boxes {
       grid-template-columns: repeat(2, 1fr); 

@@ -62,7 +62,7 @@ const Exam = () => {
         />
         <h3>NHB Grade A</h3>
         <h4>🏠 "Build the Nation, One Home at a Time."</h4>
-        <p><strong>Help Govt. build homes for our nation.</strong> </p>
+        <p><strong>Help indian Govt. build homes for our nation.</strong> </p>
         <p>Shelter being the main life asset, be the one who approves housing</p>
       </div>
 

@@ -85,7 +85,6 @@ const Exam = () => {
                 {exam.stages && <p><strong>Exam Stages:</strong> {exam.stages}</p>}
                 {exam.link && (
                   <a href={exam.link} target="_blank" rel="noopener noreferrer">
-                    <button className="join">Join us</button>
                   </a>
                 )}
               </div>
