@@ -9,7 +9,7 @@ const Contact = () => {
 
       <div className="cta-section">
         <div className="qr-code">
-          <img src="public/frame.png" alt="QR Code" />
+          <img src="public/frame.png" alt="QR" />
         </div>
         <div className="or-text">or</div>
         <a
