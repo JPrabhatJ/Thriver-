@@ -35,7 +35,7 @@ function Footer() {
       <div className="qr-png">
 
   <img 
-    src="public/frame.png" 
+    src="/frame.png" 
     alt="QR Code" 
     className="footer-qr"
   />
