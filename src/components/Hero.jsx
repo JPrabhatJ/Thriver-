@@ -70,8 +70,8 @@ useEffect(() => {
        
           <h1>Prepare for Govt. Job</h1>
           <p>
-            Which pays <span className="cut-number"><span className="cut">10LPA</span></span>,
-            <span className="cut-number"><span className="cut">15LPA</span></span>, 25LPA+ 🤑
+            Which pays <span className="cut-number"><span className="cut">5LPA</span></span>,
+            <span className="cut-number"><span className="cut">10LPA</span></span>, 25LPA+ 🤑
           </p>
           <div className="hero-buttons">
             <button className="hero-btn" onClick={handleScroll}>
