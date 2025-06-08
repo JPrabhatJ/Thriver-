@@ -2,17 +2,22 @@ footer {
   display: flex;
   align-items: center;
   background-color: black;
+  background-image: url('/Footer like png.avif'); 
+  background-repeat: no-repeat;       
+  background-size: cover;             
+  background-position: center;       
   color: rgb(255, 255, 255);  
   padding: 20px 40px;
   width: 100%; 
   position: relative;
-  bottom: 0;  /* Keep it at the bottom of the screen */
+  bottom: 0;
   left: 0;
   z-index: 1000;
   flex-shrink: 0;
   justify-content: space-between;
   gap: 2rem;
 }
+
 
 .footer-left .social-links a {
   color: rgb(255, 255, 255);

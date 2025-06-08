@@ -282,6 +282,19 @@ useEffect(() => {
         </div>
       )}
     </div>
+    <div
+      className={`accordion-item ${activeIndex === 4 ? 'active' : ''}`}
+    >
+      <button className="accordion-header" onClick={() => toggleAccordion(4)}>
+        Who will teach us?
+      </button>
+      {activeIndex === 4 && (
+        <div className="accordion-content">
+          <p>
+"we provide industry pioneer and veteran teachers who themselves have cracked these many exams or have relevant exam experience, you don't have to worry upon this."</p>
+        </div>
+      )}
+    </div>
   </div>
 </section>
 

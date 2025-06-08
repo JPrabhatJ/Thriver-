@@ -27,12 +27,12 @@ function Navbar() {
           
         </div>
       </nav>
-      <div className="sale-banner">
-        <div className="scroll-text">
-          Time is running out, so is your preparation. Enroll now 🚀
-          What is stopping you?
-        </div>
-      </div>
+    <div class="sale-banner">
+  <div class="scroll-text">
+  Time is running — your preparation should be too! 🚀 &nbsp; Join us now  &nbsp;
+  </div>
+</div>
+
     </>
   );
 }

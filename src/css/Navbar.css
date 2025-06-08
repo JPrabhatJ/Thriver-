@@ -93,27 +93,25 @@ body {
   align-items: center;
   font-size: 1.5rem;
   font-weight: bold;
-  visibility: visible; 
-  opacity: 1;
 }
 
 .scroll-text {
   display: inline-block;
   white-space: nowrap;
-  padding-left: 100%;
-  animation: scroll-left 20s linear infinite; 
-  visibility: visible;
-  opacity: 1;
+  padding-left: 100%; /* Push it fully outside from left initially */
+  animation: scroll-left 18s linear infinite;
 }
 
 @keyframes scroll-left {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0);
   }
   100% {
     transform: translateX(-100%);
   }
 }
+
+
 
 
 
