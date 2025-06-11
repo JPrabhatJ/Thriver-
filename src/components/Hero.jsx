@@ -1,5 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import "../css/Hero.css";
+import { GrLinkNext } from "react-icons/gr";
+
 
 function Hero() {
   const scrollRef = useRef(null);
@@ -61,7 +63,7 @@ useEffect(() => {
       <section className="hero">
         <video autoPlay loop muted>
           <source
-            src="/WhatsApp Video 2025-05-14 at 3.13.02 PM.mp4"
+            src="/HeroMedia.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
@@ -75,10 +77,10 @@ useEffect(() => {
           </p>
           <div className="hero-buttons">
             <button className="hero-btn" onClick={handleScroll}>
-             Our Result
+             Our Result 
             </button>
             <a href='https://docs.google.com/forms/d/1-Chp5eZwVJlgHfJMrXgv8EBGqP5OIlW1BJLeJhmrzsc' target="_blank" rel="noopener noreferrer">
-            <button className="hero-btn secondary">Get Started</button>
+            <button className="hero-btn secondary">Get Started <GrLinkNext /> </button>
             </a>
           </div>
         </div>
