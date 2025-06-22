@@ -23,6 +23,7 @@ function Footer() {
           <a href='https://www.ifsca.gov.in/' target="_blank" rel="noopener noreferrer">IFSCA</a>
 
           <Link to="/exam">Exams</Link>
+          <Link to="/mentor">Mentor</Link>
           <Link to="/motivation">Motivation</Link>
           <Link to="/contact">Contact</Link>
         </div>
@@ -31,6 +32,9 @@ function Footer() {
       <div className="footer-right">
         <p>Visitors Today: {visitorsToday ?? 'Loading...'}</p>
         <p>&copy; {new Date().getFullYear()} Thriver. All Rights Reserved.</p>
+      </div>
+      <div className="footer-centre">
+      +919876543210 Available Mon-Sat (10 AM to 7 PM)
       </div>
       <div className="qr-png">
 

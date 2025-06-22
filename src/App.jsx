@@ -7,6 +7,7 @@ import Exam from "./Pages/Exam";
 import Motivation from "./Pages/Motivation";   
 import ScrollToTop from "./Pages/ScrollToTop"; 
 import Contact from "./Pages/Contact";
+import Mentor from "./Pages/Mentor"
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Hero />} />   
         <Route path="/exam" element={<Exam />} /> 
+         <Route path="/mentor" element={<Mentor />} />
         <Route path="/motivation" element={<Motivation />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
