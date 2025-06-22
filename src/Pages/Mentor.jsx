@@ -36,13 +36,6 @@ const Exam = () => {
        <h1>Avni Rathore</h1>
         <p>Avni, an IIM Kozhikode alumna, left her role at McKinsey to pursue her passion for teaching and mentoring students in cracking the aptitude sections of major competitive exams. She scored an impressive 99.93 percentile in the CAT and, prior to her MBA, worked for three years as a Management Trainee at Punjab National Bank.</p>
       </div>
-
-    <div className="box">
-  <img src="/1070509.webp" alt="Hiring" className="exam-image" />
-  <h2>Join Our Teaching Team</h2>
-  <img src="/ThriverPNG.png" alt="Join Now" style={{ height: '150px' }}className="hiring-image" />
-
-      </div>
     </div>
   );
 };
