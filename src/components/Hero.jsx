@@ -244,7 +244,7 @@ function Hero() {
 
   <div className="small-box">
         <IoPeopleSharp style={{ marginRight: "8px" }} />
-        offline meetups
+        offline meetups and seminars
   </div>
 
 <div className="small-box">
@@ -261,6 +261,28 @@ function Hero() {
   </div>
 </section>
 
+<div className="app-download-card">
+  <div className="card-content">
+    <h2>Get Our THRIVER Mobile App</h2>
+    <p>
+      Download the Thriver app and stay ahead with your learning journey anytime, anywhere. Access your classes, track progress, and never miss an update.
+    </p>
+    <div className="app-buttons">
+      <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">
+        <img src="/Google.avif" alt="Download on Google Play" />
+      </a>
+      <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
+        <img src="/Apple.avif" alt="Download on the App Store" />
+      </a>
+    </div>
+    <h3 className="maintenance-text">🚨Currently on maintenance phase🚨</h3>
+    <h3 className="maintenance-text2">New App rolling out on 1 July* for smooth learning experience</h3>
+  </div>
+  <div className="card-image">
+    <img src="/New Mobile.jpeg" alt="Thriver App Preview" />
+  </div>
+</div>
+
 
 
       {/* Accordion Section */}
@@ -270,23 +292,23 @@ function Hero() {
           {[
             {
               question: "Why you should choose us?",
-              answer: "Our courses are designed to provide comprehensive, step-by-step guidance, whether you’re a beginner or an experienced professional..."
+              answer:"Our courses are carefully designed to provide comprehensive, step-by-step guidance, whether you’re a beginner or an experienced professional. We focus on practical skills, personalized mentorship, and real-world applications to help you succeed confidently."
             },
             {
               question: "What are different types of courses you offer?",
-              answer: "We offer a wide range of courses tailored to your needs, including beginner to advanced levels..."
+              answer: "We offer a diverse range of courses tailored to various skill levels, from beginner to advanced. Our curriculum covers practical training, industry-relevant skills, and specialized topics to help you achieve your learning goals effectively."
             },
             {
               question: "What will be the duration of the course?",
-              answer: "The duration of our courses depends on your starting level and the depth of the program..."
+              answer: "The duration of our courses varies based on your current skill level and the specific program you choose. Typically, courses range from a few weeks to several months, allowing flexible pacing to suit your learning needs."
             },
             {
               question: "What is the scheme for money back?",
-              answer: "We provide money back for first 30 days if you don’t like curriculum..."
+              answer: "We offer a 30-day money-back guarantee. If you find the curriculum doesn’t meet your expectations within the first 30 days of enrollment, you can request a full refund—no questions asked."
             },
             {
               question: "Who will teach us?",
-              answer: "We provide industry pioneer and veteran teachers who themselves have cracked these exams or have relevant experience..."
+              answer: "Our courses are taught by industry pioneers and veteran educators who have personally cracked these exams or possess extensive, relevant professional experience. They bring real-world insights and proven strategies to help you succeed."
             }
           ].map((item, index) => (
             <div key={index} className={`accordion-item ${activeIndex === index ? 'active' : ''}`}>

@@ -94,6 +94,22 @@ const Exam = () => {
   </a>
 </div>
 
+<div className="box">
+  <img
+    src="/sebi new.png"
+    alt="sebi Logo"
+    className="exam-image"
+  />
+  <h3>SEBI GRADE A 2025</h3>
+
+  <a
+    rel="noopener noreferrer"
+    className="inline-flex items-center px-4 py-2 mt-2 bg-green-600 text-white rounded hover:bg-green-700"
+  >
+    Coming Soon <GrLinkNext className="ml-2" />
+  </a>
+</div>
+
   
       
     </div>

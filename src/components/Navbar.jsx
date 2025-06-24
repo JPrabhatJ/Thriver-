@@ -41,11 +41,24 @@ function Navbar() {
         </div>
       </nav>
 
-      <div className="sale-banner">
-        <div className="scroll-text">
-          Time is running — your preparation should be too! 🚀 &nbsp; Join us now &nbsp;
-        </div>
-      </div>
+<div className="sale-banner">
+  <div className="scroll-track">
+    <div className="scroll-text">
+      Time is running — your preparation should be too! ⭐️ &nbsp;&nbsp;
+      Learn from experts with real success! ⭐️ &nbsp;&nbsp;
+      Personalized mentorship for every student! ⭐️ &nbsp;&nbsp;
+      30-day money-back guarantee! ⭐️ &nbsp;&nbsp;
+    </div>
+    <div className="scroll-text">
+      Time is running — your preparation should be too! ⭐️ &nbsp;&nbsp;
+      Learn from experts with real success! ⭐️ &nbsp;&nbsp;
+      Personalized mentorship for every student! ⭐️ &nbsp;&nbsp;
+      30-day money-back guarantee!⭐️ &nbsp;&nbsp;
+    </div>
+  </div>
+</div>
+
+
     </>
   );
 }
