@@ -213,3 +213,19 @@ body {
   }
 }
 
+.notification-link {
+  position: relative;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.notification-icon {
+  top: -2px;       /* adjust as needed */
+  right: -20px;    /* adjust as needed */
+  width: 28px;
+  height: 18px;
+  display:inline-flex;
+  border-radius: 4px;
+}
+
+

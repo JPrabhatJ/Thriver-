@@ -38,7 +38,7 @@ function Footer() {
       </div>
       <div className="qr-png">
 
-  <img 
+<img 
     src="/ThriverPNG.png" 
     alt="QR Code" 
     className="footer-qr"

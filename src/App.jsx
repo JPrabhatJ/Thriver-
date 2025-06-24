@@ -8,6 +8,7 @@ import Motivation from "./Pages/Motivation";
 import ScrollToTop from "./Pages/ScrollToTop"; 
 import Contact from "./Pages/Contact";
 import Mentor from "./Pages/Mentor"
+import Notification from "./Pages/Notification"
 
 
 function App() {
@@ -16,9 +17,10 @@ function App() {
       <ScrollToTop />
       <Navbar />
       <Routes>
-        <Route path="/" element={<Hero />} />   
+        <Route path="/" element={<Hero />} />  
+        <Route path="/notification" element={<Notification />} /> 
         <Route path="/exam" element={<Exam />} /> 
-         <Route path="/mentor" element={<Mentor />} />
+        <Route path="/mentor" element={<Mentor />} />
         <Route path="/motivation" element={<Motivation />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

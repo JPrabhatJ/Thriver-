@@ -126,7 +126,7 @@ function Hero() {
       </div>
 
       <div ref={testimonialsRef} className="testimonials-title">
-        <h2>Our Prides 🏆</h2>
+        <h2>Our Toppers 🏆</h2>
       </div>
 
       {/* ✅ Flip Cards Section */}
