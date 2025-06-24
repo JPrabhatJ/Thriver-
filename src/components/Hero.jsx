@@ -126,7 +126,7 @@ function Hero() {
       </div>
 
       <div ref={testimonialsRef} className="testimonials-title">
-        <h2>Our Toppers 🏆</h2>
+        <h2>Thriver's HAll of fame🏆</h2>
       </div>
 
       {/* ✅ Flip Cards Section */}
@@ -186,6 +186,12 @@ function Hero() {
         />
       </div>
 
+       <section className="team">
+      <img src="/Team.jpeg" fetchpriority="high" alt="team" class="team"></img>
+      </section>
+
+     
+
       {/* Accordion Section */}
       <section className="accordion-section">
         <h2>Topper's No.1 Choice since 2020</h2>
@@ -225,6 +231,22 @@ function Hero() {
           ))}
         </div>
       </section>
+
+{/* <section className="newsletter-section">
+  <h2>📬 Subscribe to our Newsletter</h2>
+  <p>Get free prep tips, topper strategies, and updates delivered to your inbox.</p>
+  <form className="newsletter-form" onSubmit={(e) => e.preventDefault()}>
+    <input
+      type="email"
+      placeholder="Enter your email"
+      required
+    />
+    <button type="submit">Subscribe</button>
+  </form>
+   <h4>Don't Worry we won't spam</h4>
+</section> */}
+
+
     </div>
   );
 }
