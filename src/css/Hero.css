@@ -924,6 +924,80 @@ align-items: center;
   text-align: left;
 }
 
+/* Main Section Style */
+.join-thriver-section {
+  padding: 40px 20px;
+  background-color: #e6f0ff;
+  text-align: center;
+
+}
+
+/* Content Box Styling */
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Title Style */
+.content h1 {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+/* Paragraph Style */
+.content p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Stats Section Style */
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* This will ensure that items wrap on smaller screens */
+}
+
+.stat-item {
+  color: rgb(0, 0, 0);
+  padding: 2px 5px;
+  border-radius: 8px;
+  font-weight: bold;
+  width: 200px; /* Ensures the stats boxes are not too large */
+  margin: 5px; /* Adds margin between stats */
+}
+
+/* Button Styling */
+.request-callback-btn {
+  display: flex;
+  align-items: center;  /* Aligns the icon and text vertically in the center */
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #0004ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;  /* Centers the button */
+}
+
+.request-callback-btn .top-2px {
+  margin-right: 8px; /* Adds some space between the icon and the text */
+}
+
+.request-callback-btn:hover {
+  background-color: #0003c5;
+}
+
+
 
 
 

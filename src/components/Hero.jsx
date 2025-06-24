@@ -9,6 +9,7 @@ import { SiMediamarkt } from "react-icons/si";
 import { ImBooks } from "react-icons/im";
 import { FaPeopleCarryBox } from "react-icons/fa6";
 import { IoPeopleSharp } from "react-icons/io5";
+import { MdWifiCalling3 } from "react-icons/md";
 
 
 
@@ -260,6 +261,48 @@ function Hero() {
     </div>
   </div>
 </section>
+
+<section className="join-thriver-section">
+  <div className="content">
+    <h1>ELITE Govt. Job Prep, 50% faster.</h1>
+    <h2>By ex-RBI, SIDBI, Bank PO and alumni of IIM, ISB and IIT</h2>
+    
+    <div className="stats">
+      <div className="stat-item">
+        <h3>970+ selection overall</h3>
+      </div>
+        <span className="separator">|</span>
+      <div className="stat-item">
+        <h3>30,000+ Students enrolled</h3>
+      </div>
+        <span className="separator">|</span>
+         <div className="stat-item">
+        <h3>93% selection rate</h3>
+      </div>
+        <span className="separator">|</span>
+      <div className="stat-item">
+        <h3>100 Million+ Views</h3>
+      </div>
+       <span className="separator">|</span>
+       <div className="stat-item">
+        <h3>Guidance on each step</h3>
+      </div>
+    </div>
+<a
+  href="https://docs.google.com/forms/d/1-Chp5eZwVJlgHfJMrXgv8EBGqP5OIlW1BJLeJhmrzsc"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ textDecoration: "none" }}
+>
+  <button className="request-callback-btn">
+    <MdWifiCalling3 className="top-2px" /> Request Callback
+  </button>
+</a>
+
+
+  </div>
+</section>
+
 
 <div className="app-download-card">
   <div className="card-content">
