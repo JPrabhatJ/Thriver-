@@ -281,7 +281,7 @@ function Hero() {
       </div>
         <span className="separator">|</span>
       <div className="stat-item">
-        <h3>100 Million+ Views</h3>
+        <h3>100 Million+ Views on youtube</h3>
       </div>
        <span className="separator">|</span>
        <div className="stat-item">
