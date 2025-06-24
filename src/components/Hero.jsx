@@ -1,7 +1,12 @@
 import React, { useRef, useState, useEffect } from "react";
 import "../css/Hero.css";
-import Marquee from "react-fast-marquee";
 import { GrLinkNext } from "react-icons/gr";
+import { FaTrophy } from "react-icons/fa";
+import { FaUserGraduate } from "react-icons/fa";
+import { FaHandshake } from "react-icons/fa";
+import { PiTreeStructureFill } from "react-icons/pi";
+
+
 
 /* ✅ Reusable FlipCard Component */
 const FlipCard = ({ id, imgSrc, name, position, type, insights, cta }) => (
@@ -187,10 +192,51 @@ function Hero() {
       </div>
 
        <section className="team">
-      <img src="/Team.jpeg" fetchpriority="high" alt="team" class="team"></img>
+      <img src="/Team.jpeg" alt="team" className="team"></img>
       </section>
 
-     
+<section className="squares">
+  <div className="big-square">
+    <div className="left-text">
+      <div>
+        <h2>Why consider us</h2>
+        <img src="/Why Us.svg" alt="why us" style={{ maxWidth: "100%", marginTop: "20px" }} />
+      </div>
+    </div>
+    <div className="right-boxes">
+      <div className="small-box">
+        <FaUserGraduate style={{ marginRight: "8px" }} />
+        Result-Oriented Training
+      </div>
+      <div className="small-box">
+        <FaHandshake style={{ marginRight: "8px" }} />
+        Personal Mentorship
+      </div>
+      <div className="small-box">
+        <PiTreeStructureFill style={{ marginRight: "8px" }} />
+        Structured Curriculum
+      </div>
+      <div className="small-box">
+        <FaTrophy style={{ marginRight: "8px" }} />
+        Interview Guidance
+      </div>
+    
+     <a
+  href="https://docs.google.com/forms/d/1-Chp5eZwVJlgHfJMrXgv8EBGqP5OIlW1BJLeJhmrzsc"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{ textDecoration: "none" }}
+>
+  <div className="small-box-unique arrow-cursor">
+    Why still waiting Join Now
+    <GrLinkNext style={{ marginRight: "8px" }} />
+  </div>
+</a>
+    </div>
+  </div>
+</section>
+
+
 
       {/* Accordion Section */}
       <section className="accordion-section">
