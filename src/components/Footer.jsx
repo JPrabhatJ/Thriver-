@@ -34,7 +34,10 @@ function Footer() {
         <p>&copy; {new Date().getFullYear()} Thriver. All Rights Reserved.</p>
       </div>
       <div className="footer-centre">
-      +919876543210 Available Mon-Sat (10 AM to 7 PM)
+      <ul><li>+919876543210 Available Mon-Sat (10 AM to 7 PM)</li>
+      <li>info@thriveredu.com</li>
+      <li>Sec-63 Noida, UP</li>
+      </ul>
       </div>
       <div className="qr-png">
 

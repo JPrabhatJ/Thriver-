@@ -29,7 +29,7 @@ function Navbar() {
           <Link to="/exam" className="nav-btn" onClick={() => setMenuOpen(false)}>Exams</Link>
           <Link to="/mentor" className="nav-btn" onClick={() => setMenuOpen(false)}>Mentor</Link>
           <Link to="/motivation" className="nav-btn" onClick={() => setMenuOpen(false)}>Motivation</Link>
-                    <Link to="/notification" className="nav-btn notification-link" onClick={() => setMenuOpen(false)}>
+          <Link to="/notification" className="nav-btn notification-link" onClick={() => setMenuOpen(false)}>
   Notifications
   <img
     src="/New BG.png"

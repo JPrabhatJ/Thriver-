@@ -217,15 +217,16 @@ body {
   position: relative;
   font-weight: bold;
   color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 6px; /* space between text and icon */
 }
+
 
 .notification-icon {
-  top: -2px;       /* adjust as needed */
-  right: -20px;    /* adjust as needed */
-  width: 28px;
-  height: 18px;
-  display:inline-flex;
+  width: 35px;
+  height: auto;
+  display: inline-block;
   border-radius: 4px;
 }
-
 

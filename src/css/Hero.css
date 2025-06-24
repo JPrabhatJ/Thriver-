@@ -756,10 +756,11 @@ align-items: center;
   width: 100%;
   height: 50%;
   background-color: white;
-  border-radius: 12px;
+  border-radius: 8%; 
   padding: 40px;
   gap: 20px;
 }
+
 
 .left-text {
   flex: 1 1 250px;
@@ -776,18 +777,26 @@ align-items: center;
 .right-boxes {
   flex: 2 1 600px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
   gap: 20px;
 }
 
 .small-box {
-  background-color: #ff4081;
+  background-color: #ef5589;
   color: white;
   padding: 30px;
   font-size: 30px;
+  border-radius: 12px;
   text-align: center;
   font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
+.small-box:hover {
+  background-color: #ff4081;/* darker shade for hover */
+  transform: scale(1.05);    /* subtle zoom effect */
+}
+
 .small-box-unique {
   color: rgb(13, 0, 255);
   padding: 30px;
@@ -798,8 +807,10 @@ align-items: center;
 
 .left-text img {
   max-width: 200px;
-  height: auto;
+  height: 300px;
   display: block;
   margin-top: 20px;
 }
+
+
 

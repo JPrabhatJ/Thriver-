@@ -5,6 +5,10 @@ import { FaTrophy } from "react-icons/fa";
 import { FaUserGraduate } from "react-icons/fa";
 import { FaHandshake } from "react-icons/fa";
 import { PiTreeStructureFill } from "react-icons/pi";
+import { SiMediamarkt } from "react-icons/si";
+import { ImBooks } from "react-icons/im";
+import { FaPeopleCarryBox } from "react-icons/fa6";
+import { IoPeopleSharp } from "react-icons/io5";
 
 
 
@@ -199,7 +203,7 @@ function Hero() {
   <div className="big-square">
     <div className="left-text">
       <div>
-        <h2>Why consider us</h2>
+        <h2>Why consider Thriver ?</h2>
         <img src="/Why Us.svg" alt="why us" style={{ maxWidth: "100%", marginTop: "20px" }} />
       </div>
     </div>
@@ -232,6 +236,27 @@ function Hero() {
     <GrLinkNext style={{ marginRight: "8px" }} />
   </div>
 </a>
+
+ <div className="small-box">
+        <SiMediamarkt style={{ marginRight: "8px" }} />
+        Weekly Webinars
+  </div>
+
+  <div className="small-box">
+        <IoPeopleSharp style={{ marginRight: "8px" }} />
+        offline meetups
+  </div>
+
+<div className="small-box">
+        <ImBooks style={{ marginRight: "8px" }} />
+        Free pyq books and notes
+  </div>
+
+<div className="small-box">
+        <FaPeopleCarryBox style={{ marginRight: "8px" }} />
+        weekly and monthly 1:1 session
+  </div>
+
     </div>
   </div>
 </section>
@@ -277,21 +302,6 @@ function Hero() {
           ))}
         </div>
       </section>
-
-{/* <section className="newsletter-section">
-  <h2>📬 Subscribe to our Newsletter</h2>
-  <p>Get free prep tips, topper strategies, and updates delivered to your inbox.</p>
-  <form className="newsletter-form" onSubmit={(e) => e.preventDefault()}>
-    <input
-      type="email"
-      placeholder="Enter your email"
-      required
-    />
-    <button type="submit">Subscribe</button>
-  </form>
-   <h4>Don't Worry we won't spam</h4>
-</section> */}
-
 
     </div>
   );
