@@ -125,14 +125,14 @@ function Hero() {
 
       <div className="floating-line">
         <div className="floating-icons">
-          <a href="https://www.onlinesbi.sbi/" target="_blank" rel="noopener noreferrer"><img src="/sbi-bg.png" alt="sbi" /></a>
+          <a href=" https://www.pfrda.org.in" target="_blank" rel="noopener noreferrer"><img src="/PFRDA_L new.png" alt="pfrda" /></a>
           <a href="https://www.sebi.gov.in" target="_blank" rel="noopener noreferrer"><img src="/sebi new.png" alt="sebi" /></a>
-          <a href="https://www.nabard.org" target="_blank" rel="noopener noreferrer"><img src="/nabard-old-removebg-preview.png" alt="nabard" /></a>
+          <a href="https://www.onlinesbi.sbi/" target="_blank" rel="noopener noreferrer"><img src="/sbi-bg.png" alt="sbi" /></a>
           <a href="https://www.rbi.org.in" target="_blank" rel="noopener noreferrer"><img src="/rbi new.png" alt="rbi" /></a>
           <a href="https://www.nhb.org.in" target="_blank" rel="noopener noreferrer"><img src="/nhb new.png" alt="nhb" /></a>
-          <a href=" https://www.pfrda.org.in" target="_blank" rel="noopener noreferrer"><img src="/PFRDA_L new.png" alt="pfrda" /></a>
-          <a href="https://www.irdai.gov.in" target="_blank" rel="noopener noreferrer"><img src="/irdai new.png" alt="irdai" /></a>
+          <a href="https://www.nabard.org" target="_blank" rel="noopener noreferrer"><img src="/nabard-old-removebg-preview.png" alt="nabard" /></a>
           <a href="https://www.ifsca.gov.in/" target="_blank" rel="noopener noreferrer"><img src="/ifs new.png" alt="irdai" /></a>
+          <a href="https://www.irdai.gov.in" target="_blank" rel="noopener noreferrer"><img src="/irdai new.png" alt="irdai" /></a>
            <a href="https://www.ibps.in/" target="_blank" rel="noopener noreferrer"><img src="/ibps-bg.png" alt="ibps" /></a>
         </div>
       </div>
