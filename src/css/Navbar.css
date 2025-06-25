@@ -38,6 +38,7 @@ body {
 .navbar-logo {
   height: 100px;
   width: auto;
+  margin-left: 40px;
 }
 
 /* Center Text */

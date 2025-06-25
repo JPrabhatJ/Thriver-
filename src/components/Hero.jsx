@@ -7,9 +7,9 @@ import { FaHandshake } from "react-icons/fa";
 import { PiTreeStructureFill } from "react-icons/pi";
 import { SiMediamarkt } from "react-icons/si";
 import { ImBooks } from "react-icons/im";
-import { FaPeopleCarryBox } from "react-icons/fa6";
+import { FaVideo } from "react-icons/fa6";
 import { IoPeopleSharp } from "react-icons/io5";
-import { MdWifiCalling3 } from "react-icons/md";
+import { SlCallIn } from "react-icons/sl";
 
 
 
@@ -240,7 +240,7 @@ function Hero() {
 
  <div className="small-box">
         <SiMediamarkt style={{ marginRight: "8px" }} />
-        Weekly Webinars
+        Discussion Forum
   </div>
 
   <div className="small-box">
@@ -254,8 +254,8 @@ function Hero() {
   </div>
 
 <div className="small-box">
-        <FaPeopleCarryBox style={{ marginRight: "8px" }} />
-        weekly and monthly 1:1 session
+        <FaVideo  style={{ marginRight: "8px" }} />
+        Video & audio Lessons
   </div>
 
     </div>
@@ -295,7 +295,7 @@ function Hero() {
   style={{ textDecoration: "none" }}
 >
   <button className="request-callback-btn">
-    <MdWifiCalling3 className="top-2px" /> Request Callback
+    <SlCallIn className="top-2px" /> Request Callback
   </button>
 </a>
 
@@ -311,15 +311,11 @@ function Hero() {
       Download the Thriver app and stay ahead with your learning journey anytime, anywhere. Access your classes, track progress, and never miss an update.
     </p>
     <div className="app-buttons">
-      <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">
         <img src="/Google.avif" alt="Download on Google Play" />
-      </a>
-      <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
         <img src="/Apple.avif" alt="Download on the App Store" />
-      </a>
     </div>
     <h3 className="maintenance-text">🚨Currently on maintenance phase🚨</h3>
-    <h3 className="maintenance-text2">New App rolling out on 1 July* for smooth learning experience</h3>
+    <h3 className="maintenance-text2">New App rolling out on 13th August* for smooth learning experience</h3>
   </div>
   <div className="card-image">
     <img src="/New Mobile.jpeg" alt="Thriver App Preview" />
