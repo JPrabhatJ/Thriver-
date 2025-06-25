@@ -145,41 +145,41 @@ function Hero() {
         className={`four-boxes ${showBoxes ? "fade-in" : "hidden"}`}
       >
         <FlipCard
-          id="akash"
-          imgSrc="/WhatsApp Image 2025-05-14 at 2.48.21 PM.jpeg"
-          name="AKASH SINGH"
+          id="Rishabh"
+          imgSrc="/Topper3.png"
+          name="Rishabh Kashyap"
           position="RBI GRADE B, AIR-91"
           type="Classroom Student"
           insights="AKASH cracked RBI Grade B using our advanced test series and revision planner. Strategic mocks and detailed mentorship were key to his AIR-91 success."
         />
         <FlipCard
-          id="anoop"
-          imgSrc="/WhatsApp Image 2025-05-14 at 2.48.22 PM (1).jpeg"
-          name="ANOOP RAJ"
+          id="Karnima"
+          imgSrc="/Topper2.png"
+          name="Karnima Arora"
           position="IRDAI Assistant Manager"
           type="Online Student"
           insights="Anoop utilized our online study plan. Regular doubt-clearing sessions, pre-recorded content, and speed tests helped him secure his dream role at IRDAI."
         />
         <FlipCard
-          id="nishant"
-          imgSrc="/WhatsApp Image 2025-05-14 at 2.48.22 PM.jpeg"
-          name="NISHANT ROY"
+          id="Akash"
+          imgSrc="/Topper1.png"
+          name="Akash Meena"
           position="SEBI IT Officer"
           type="Interview Guidance"
           insights="Nishant cleared SEBI with our IT-specific test plan and expert-led technical interview training. His confidence and preparation stood out."
         />
         <FlipCard
-          id="arjit"
-          imgSrc="/WhatsApp Image 2025-05-15 at 6.14.42 PM.jpeg"
-          name="ARJIT SINGH"
+          id="Kamal"
+          imgSrc="/Topper4.png"
+          name="Kamal Preet Singh"
           position="NHB Assistant Manager"
           type="Mains + Interview Student"
           insights="Arjit joined after prelims and aced mains with our focused strategy. Daily revision of targets and weekly mock interviews helped him confidently crack NHB."
         />
         <FlipCard
-          id="prabhat"
-          imgSrc="/WhatsApp Image 2025-05-21 at 11.56.36 PM.jpeg"
-          name="PRABHAT JHA"
+          id="Lakshay"
+          imgSrc="/Topper5.png"
+          name="Lakshay Verma"
           position="NABARD Grade A"
           type="Full Course Enrollee"
           insights="Prabhat followed our end-to-end guidance program with weekly mentorship calls and structured test series. He cracked NABARD in first attempt with confidence."

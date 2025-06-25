@@ -138,7 +138,7 @@
   grid-template-columns: repeat(2, 1fr); 
   gap: 2rem;
   padding: 3rem 2rem;
-  margin-top: 4rem;
+  margin-top: 0.1rem;
   background-color: #ffffff;
   visibility: visible;
   opacity: 1;
