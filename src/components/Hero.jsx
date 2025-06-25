@@ -187,7 +187,7 @@ function Hero() {
         <FlipCard
           id="cta"
           imgSrc="/1070509.webp"
-          name="You can be the next"
+          name="You can be the next officer"
           insights="With utmost care we will understand your background and prepare a roadmap for your rapid and meaningful preparation."
           cta={{
             label: "Join Now",
@@ -301,6 +301,8 @@ function Hero() {
 
 
   </div>
+  <div className="bottom-blur"></div>
+
 </section>
 
 
@@ -315,7 +317,7 @@ function Hero() {
         <img src="/Apple.avif" alt="Download on the App Store" />
     </div>
     <h3 className="maintenance-text">🚨Currently on maintenance phase🚨</h3>
-    <h3 className="maintenance-text2">New App rolling out on 13th August* for smooth learning experience</h3>
+    <h3 className="maintenance-text2">New App rolling out on 13th August* for smooth and better learning experience</h3>
   </div>
   <div className="card-image">
     <img src="/New Mobile.jpeg" alt="Thriver App Preview" />
@@ -365,6 +367,7 @@ function Hero() {
       </section>
 
     </div>
+    
   );
 }
 
