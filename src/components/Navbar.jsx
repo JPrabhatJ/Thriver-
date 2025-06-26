@@ -42,9 +42,12 @@ function Navbar() {
       </nav>
 
 <div className="sale-banner">
+  <svg class="moving-curve" viewBox="0 0 200 50" preserveAspectRatio="none">
+    <path d="M0,25 Q50,0 100,25 T200,25" stroke="#A4161A" fill="none" stroke-width="2" />
+  </svg>
   <div className="scroll-track">
     <div className="scroll-text">
-      Time is running — your preparation should be too! ⭐️ &nbsp;&nbsp;
+      ⭐️ Time is running — your preparation should be too! ⭐️ &nbsp;&nbsp;
       Learn from experts with real success! ⭐️ &nbsp;&nbsp;
       Personalized mentorship for every student! ⭐️ &nbsp;&nbsp;
       30-day money-back guarantee! ⭐️ &nbsp;&nbsp;
