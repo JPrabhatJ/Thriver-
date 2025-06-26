@@ -125,7 +125,8 @@ function Hero() {
 
       <div className="floating-line">
         <div className="floating-icons">
-          <a href=" https://www.pfrda.org.in" target="_blank" rel="noopener noreferrer"><img src="/PFRDA_L new.png" alt="pfrda" /></a>
+          <a href="https://fci.gov.in/" target="_blank" rel="noopener noreferrer"><img src="/fci.png" alt="ibps" /></a>
+          <a href="https://www.pfrda.org.in" target="_blank" rel="noopener noreferrer"><img src="/PFRDA_L new.png" alt="pfrda" /></a>
           <a href="https://www.sebi.gov.in" target="_blank" rel="noopener noreferrer"><img src="/sebi new.png" alt="sebi" /></a>
           <a href="https://www.onlinesbi.sbi/" target="_blank" rel="noopener noreferrer"><img src="/sbi-bg.png" alt="sbi" /></a>
           <a href="https://www.rbi.org.in" target="_blank" rel="noopener noreferrer"><img src="/rbi new.png" alt="rbi" /></a>
@@ -134,10 +135,11 @@ function Hero() {
           <a href="https://www.ifsca.gov.in/" target="_blank" rel="noopener noreferrer"><img src="/ifs new.png" alt="irdai" /></a>
           <a href="https://www.irdai.gov.in" target="_blank" rel="noopener noreferrer"><img src="/irdai new.png" alt="irdai" /></a>
            <a href="https://www.ibps.in/" target="_blank" rel="noopener noreferrer"><img src="/ibps-bg.png" alt="ibps" /></a>
+             <a href="https://nationalinsurance.nic.co.in/" target="_blank" rel="noopener noreferrer"><img src="/nicl.png" alt="pfrda" /></a>
         </div>
       </div>
 
-      <div ref={testimonialsRef} className="testimonials-title">
+      <div ref={testimonialsRef} className="testimonials-title">  
         <h2>Thriver's HAll of fame🏆</h2>
       </div>
 
@@ -283,7 +285,7 @@ function Hero() {
       </div>
         <span className="separator">|</span>
       <div className="stat-item">
-        <h3>100 Million+ Views on youtube</h3>
+        <h3>Updated curriculum</h3>
       </div>
        <span className="separator">|</span>
        <div className="stat-item">
