@@ -63,6 +63,24 @@ const Exam = () => {
 
 <div className="box">
   <img
+    src="PFRDA_L new.png"
+    alt="pfrda Logo"
+    className="exam-image"
+  />
+  <h3>PFRDA GRADE A 2025</h3>
+
+    <a
+    href="https://www.bankersadda.com/wp-content/uploads/multisite/2025/03/23160433/PFDRA-Grade-A-recruitment-2025-Notification-PDF.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center px-4 py-2 mt-2 bg-green-600 text-white rounded hover:bg-green-700"
+  >
+    Click Here <GrLinkNext className="ml-2" />
+  </a>
+</div>
+
+<div className="box">
+  <img
     src="/rbi new.png"
     alt="rbi Logo"
     className="exam-image"
@@ -78,21 +96,7 @@ const Exam = () => {
 </div>
 
 
-<div className="box">
-  <img
-    src="/nabard-old-removebg-preview.png"
-    alt="nabard Logo"
-    className="exam-image"
-  />
-  <h3>NABARD GRADE A&B 2025</h3>
 
-  <a
-    rel="noopener noreferrer"
-    className="inline-flex items-center px-4 py-2 mt-2 bg-green-600 text-white rounded hover:bg-green-700"
-  >
-    Coming Soon <GrLinkNext className="ml-2" />
-  </a>
-</div>
 
 <div className="box">
   <img
