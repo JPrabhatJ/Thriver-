@@ -13,7 +13,6 @@ import { SlCallIn } from "react-icons/sl";
 
 
 
-/* ✅ Reusable FlipCard Component */
 const FlipCard = ({ id, imgSrc, name, position, type, insights, cta }) => (
   <div className="flip-card">
     <input type="checkbox" id={`flip-${id}`} className="card-toggle" hidden />
@@ -143,7 +142,6 @@ function Hero() {
         <h2>Thriver's HAll of fame🏆</h2>
       </div>
 
-      {/* ✅ Flip Cards Section */}
 
       
       <div
@@ -216,7 +214,7 @@ function Hero() {
     </div>
     <div className="right-boxes">
       <div className="small-box">
-        <FaUserGraduate style={{ marginRight: "8px" }} />
+        <FaTrophy style={{ marginRight: "8px" }} />
         Result-Oriented Training
       </div>
       <div className="small-box">
@@ -228,7 +226,7 @@ function Hero() {
         Structured Curriculum
       </div>
       <div className="small-box">
-        <FaTrophy style={{ marginRight: "8px" }} />
+        <FaUserGraduate style={{ marginRight: "8px" }} />
         Interview Guidance
       </div>
     
@@ -270,7 +268,7 @@ function Hero() {
 
 <section className="join-thriver-section">
   <div className="content">
-    <h1>ELITE Govt. Job Prep, 50% faster.</h1>
+    <h1>ELITE Govt. Job Prep, 50% faster atleast.</h1>
     <h2>By ex-RBI, SIDBI, Bank PO and alumni of IIM, ISB and IIT</h2>
     
     <div className="stats">
@@ -316,14 +314,14 @@ function Hero() {
   <div className="card-content">
     <h2>Get Our THRIVER Mobile App</h2>
     <p>
-      Download the Thriver app and stay ahead with your learning journey anytime, anywhere. Access your classes, track progress, and never miss an update.
+      Download the Thriver app and stay ahead with your learning journey anytime, anywhere. Access your classes, track progress, and never miss any update.
     </p>
     <div className="app-buttons">
         <img src="/Google.avif" alt="Download on Google Play" />
         <img src="/Apple.avif" alt="Download on the App Store" />
     </div>
     <h3 className="maintenance-text">🚨Currently on maintenance phase🚨</h3>
-    <h3 className="maintenance-text2">New App rolling out on 13th August* for smooth and better learning experience</h3>
+    <h3 className="maintenance-text2">New App rolling out very soon for smooth and better learning experience</h3>
   </div>
   <div className="card-image">
     <img src="/New Mobile.jpeg" alt="Thriver App Preview" />
